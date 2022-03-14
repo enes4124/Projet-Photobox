@@ -1,4 +1,4 @@
-function display_galerie(galerie){
+export function display_galerie(galerie){
 
     let a = document.getElementById("gallery_container");
     a.innerHTML = "";
