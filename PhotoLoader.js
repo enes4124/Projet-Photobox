@@ -23,3 +23,4 @@ export const loadPicture = function(idPicture){
 }
 
 //loadPicture(105);
+//Maxence esr un bg
