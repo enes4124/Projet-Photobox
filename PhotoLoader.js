@@ -1,26 +1,28 @@
 import {configuration} from "./config.js";
 
-export const loadPicture = function(idPicture){
 
-    configuration('https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api/photos/', idPicture)
-        .then(resp => {
-            if(resp.ok){
-                return resp.json().then(data =>{
-                    //data.photo.descr;
-                    //console.log(data.photo.descr);
-                    console.log(data.photo.titre);
-                    console.log(data.photo.format);
-                    console.log(data.photo.url);
-                })
-            }else return Promise.reject(new Error(resp.statusText))
-        })
-        .catch(error => {
 
-            console.log('network/response error : ' + error);
 
-        });
 
+function loadResource(uri){
+    let pr = fetch("https://webetu.iutnc.univ-lorraine.fr"+uri, {
+        credentials : 'include'
+    }).then(resp => {
+        if(resp.ok){
+            return resp.json().then(data => {
+                return data;
+            });
+        }
+        else Promise.reject(new Error("L'image n'existe pas"));
+    }).catch(error => {
+        console.log(error);
+    });
+    return pr;
 }
 
+
+export default {
+    loadResource
+}
 //loadPicture(105);
 //Maxence esr un bg
