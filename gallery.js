@@ -1,4 +1,4 @@
-import {loadResource} from "./PhotoLoader"
+import {loadResource} from "./PhotoLoader.js"
 
 export function load(){
     let tab;
