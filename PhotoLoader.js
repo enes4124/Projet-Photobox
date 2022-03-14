@@ -1,5 +1,5 @@
 export function loadResource(uri){
-    let pr = fetch("https://webetu.iutnc.univ-lorraine.fr"+uri, {
+    let pr = fetch(uri, {
         credentials : 'include'
     }).then(resp => {
         if(resp.ok){
