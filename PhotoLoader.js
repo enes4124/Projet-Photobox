@@ -2,7 +2,7 @@ import {configuration} from "./config.js";
 
 export const loadPicture = function(idPicture){
 
-    configuration('https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api/photos/', idPicture)
+    configuration('https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api/photos', idPicture)
         .then(resp => {
             if(resp.ok){
                 return resp.json().then(data =>{
