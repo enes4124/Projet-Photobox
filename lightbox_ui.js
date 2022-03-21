@@ -20,12 +20,25 @@ export function display_lightbox(data){
     `
     aas.innerHTML = htmloklm;
 
-    document.getElementById("lightbox_container").classList.remove("lightbox_container--hidden");
-    document.getElementById("lightbox_container").classList.add("lightbox_container--visible");
-    console.log(aas);
+    show()
 
 
 }
+
+
+function hide(){
+    document.getElementById("lightbox_container").classList.add("lightbox_container--hidden");
+    document.getElementById("lightbox_container").classList.remove("lightbox_container--visible");
+
+}
+
+
+function show(){
+    document.getElementById("lightbox_container").classList.remove("lightbox_container--hidden");
+    document.getElementById("lightbox_container").classList.add("lightbox_container--visible");
+
+}
+
 
 // display_lightbox()
 
