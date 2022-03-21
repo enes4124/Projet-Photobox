@@ -26,7 +26,7 @@ export function display_lightbox(data){
 }
 
 
-function hide(){
+export function hide(){
     document.getElementById("lightbox_container").classList.add("lightbox_container--hidden");
     document.getElementById("lightbox_container").classList.remove("lightbox_container--visible");
 
