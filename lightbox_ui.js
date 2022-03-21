@@ -24,13 +24,7 @@ export function display_lightbox(data){
     document.getElementById("lightbox_container").classList.add("lightbox_container--visible");
     console.log(aas);
 
-    cacher = document.getElementById("lightbox_close")
-    cacher.onclick = function(){
-        console.log("ok c'est ici le cachement");
-        document.getElementById("lightbox_container").classList.remove("lightbox_container--visible");
-        document.getElementById("lightbox_container").classList.add("lightbox_container--hidden");
 
-    }
 }
 
 // display_lightbox()
