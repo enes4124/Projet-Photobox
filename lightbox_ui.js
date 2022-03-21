@@ -19,6 +19,9 @@ export function display_lightbox(data){
     </div>
     `
     aas.innerHTML = htmloklm;
+
+    document.getElementById("lightbox_container").classList.remove("lightbox_container--hidden");
+    document.getElementById("lightbox_container").classList.remove("lightbox_container--visible");
     console.log(aas);
 }
 
