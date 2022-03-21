@@ -1,4 +1,5 @@
 import {loadResource} from "./PhotoLoader";
+import {display_lightbox} from "./lightbox_ui.js";
 
 export function load(node){
 
