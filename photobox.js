@@ -5,7 +5,6 @@ import {hide} from "./lightbox_ui.js";
 
 let cacher = document.getElementById("lightbox_close")
 cacher.onclick = function(){
-    console.log("ok c'est ici le cachement");
     hide();
 }
 
