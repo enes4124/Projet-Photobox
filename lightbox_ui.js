@@ -1,11 +1,11 @@
 
 
 export function display_lightbox(data){
-    console.log(data)    
+    console.log(data.photo.url.href);
     let aas = document.getElementById("lightbox_full_img");
 
-    let urll = data.photo.original.href
-    let titre = data.photo.titre
+    let urll = "https://webetu.iutnc.univ-lorraine.fr" + data.photo.url.href;
+    let titre = data.photo.titre;
     let htmloklm = `
     <div id="lightbox">
         <div id="lightbox-head">
@@ -18,7 +18,7 @@ export function display_lightbox(data){
         </div>
     </div>
     `
-    ass.innerHTML = htmloklm;
+    aas.innerHTML = htmloklm;
     console.log(aas);
 }
 
