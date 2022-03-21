@@ -1,7 +1,7 @@
 
 
 export function display_lightbox(data){
-    console.log(data.photo.url.href);
+    console.log(data);
     let aas = document.getElementById("lightbox_full_img");
 
     let urll = "https://webetu.iutnc.univ-lorraine.fr" + data.photo.url.href;
