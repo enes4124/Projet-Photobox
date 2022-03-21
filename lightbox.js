@@ -5,5 +5,5 @@ export function load(node){
 
     let a = node.getAttribute("data-uri");
 
-    loadResource("https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api/photos/6").then(display_lightbox);
+    loadResource("https://webetu.iutnc.univ-lorraine.fr" + a).then(display_lightbox);
 }
