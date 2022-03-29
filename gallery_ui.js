@@ -22,7 +22,6 @@ export function display_galerie(galerie){
 
     for(let i=0;i<a.length;i++) {
         a[i].onclick = () => {
-            console.log(a[i].children[0]);
             load(a[i].children[0]);
         };
     }
