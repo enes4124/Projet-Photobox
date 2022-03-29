@@ -2,9 +2,11 @@
 
 export function display_lightbox(data){
 
+    console.log(data)
+
     let aas = document.getElementById("lightbox_full_img");
 
-    let urll = "https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/img/large/" + data.photo.file;
+    let urll = "https://webetu.iutnc.univ-lorraine.fr/" + data.photo.url.href;
     let titre = data.photo.titre;
     let htmloklm = `
     <div id="lightbox">
