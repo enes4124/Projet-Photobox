@@ -1,8 +1,8 @@
-
+import { loadResource } from "./PhotoLoader.js";
 
 export function display_lightbox(data){
 
-    console.log(data)
+    // console.log(data)
 
     let aas = document.getElementById("lightbox_full_img");
 
@@ -14,9 +14,20 @@ export function display_lightbox(data){
     document.getElementById("lightbox_full_img").setAttribute("src",urll);
     document.getElementById("lightbox_title").innerText = titre;
 
-    console.log(document.getElementById("lightbox_full_img").getAttribute("src"));
+    // console.log(document.getElementById("lightbox_full_img").getAttribute("src"));
+
+
 
     show()
+
+
+
+
+    document.querySelector('#aGauche').addEventListener('click', evt => {
+    })
+
+    document.querySelector('#aDroite').addEventListener('click',evt => {
+    })
 }
 
 
