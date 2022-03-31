@@ -13,12 +13,24 @@ export function load(node){
 
 export function nextL() {
 
-    val = val.nextElementSibling;
+    if(val.nextElementSibling){
+        val = val.nextElementSibling;
+    }else{
+        val = val.parentNode.firstElementChild;
+        console.log(val);
+    }
+
     load(val.firstElementChild);
 }
 
 export function prevL() {
 
-    val = val.previousElementSibling;
+    if(val.previousElementSibling){
+        val = val.previousElementSibling;
+    }else{
+        val = val.parentNode.lastElementChild;
+        console.log(val);
+    }
+
     load(val.firstElementChild);
 }
