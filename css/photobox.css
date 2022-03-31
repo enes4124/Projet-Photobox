@@ -129,32 +129,105 @@ nav #next {
 }
 
 #description{
-  display: block;
-  margin: auto;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  color: rgb(7, 117, 31);
+  text-shadow:   -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000,
+   1px 1px 2px #141414,
+   1px 1px 3px #141414,
+   1px 1px 5px #141414,
+   1px 1px 7px #141414,
+   1px 1px 10px #141414,
+   1px 1px 12px #141414,
+   1px 1px 18px #141414;color:#fff;
+background-color:#2E8ECE;
+
+
 
 }
 
 #format{
-  display: block;
-  margin: auto;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  color: rgb(7, 117, 31);
+  text-shadow:   -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000,
+   1px 1px 2px #141414,
+   1px 1px 3px #141414,
+   1px 1px 5px #141414,
+   1px 1px 7px #141414,
+   1px 1px 10px #141414,
+   1px 1px 12px #141414,
+   1px 1px 18px #141414;color:#fff;
+background-color:#2E8ECE;
+
+
 }
 
 #lightbox_title{
-  display: block;
-  margin: auto;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  color: rgb(7, 117, 31);
+  text-shadow:   -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000,
+   1px 1px 2px #141414,
+   1px 1px 3px #141414,
+   1px 1px 5px #141414,
+   1px 1px 7px #141414,
+   1px 1px 10px #141414,
+   1px 1px 12px #141414,
+   1px 1px 18px #141414;color:#fff;
+background-color:#2E8ECE;
 }
+
+#aGauche{
+  width: 750px;
+  height: 10px;
+}
+
+#aDroite{
+  width: 750px;
+  height: 10px;
+}
+
+
+
+
+
+button {
+  display: inline-block;
+  background-color: #7b38d8;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #f7c2f9;
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
