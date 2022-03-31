@@ -2,6 +2,7 @@ import {first, last, loadR, previous} from "./gallery.js";
 import {display_galerie} from "./gallery_ui.js";
 import {hide} from "./lightbox_ui.js";
 import {next} from "./gallery.js"
+import {nextL, prevL} from "./lightbox.js";
 
 
 let cacher = document.getElementById("lightbox_close")
@@ -33,3 +34,9 @@ document.querySelector("#first").addEventListener('click', e =>{
 document.querySelector("#last").addEventListener('click', e =>{
   last().then(display_galerie);
 });
+
+
+//partie fleche lightbox
+document.getElementById("aDroite").addEventListener('click',nextL);
+
+document.getElementById("aGauche").addEventListener('click',prevL);

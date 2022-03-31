@@ -1,8 +1,9 @@
-import { loadResource } from "./PhotoLoader.js";
+import {loadResource} from "./PhotoLoader.js";
+
 
 export function display_lightbox(data){
 
-    // console.log(data)
+    console.log(data)
 
     let aas = document.getElementById("lightbox_full_img");
 
@@ -23,11 +24,6 @@ export function display_lightbox(data){
 
 
 
-    document.querySelector('#aGauche').addEventListener('click', evt => {
-    })
-
-    document.querySelector('#aDroite').addEventListener('click',evt => {
-    })
 }
 
 
