@@ -14,7 +14,6 @@ export function load(node){
 }
 
 export function nextL() {
-
     if(val.nextElementSibling){
         val = val.nextElementSibling;
         load(val.firstElementChild);
