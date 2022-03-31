@@ -1,5 +1,7 @@
 import {loadResource} from "./PhotoLoader.js";
 import {display_lightbox} from "./lightbox_ui.js";
+import {next,previous} from "./gallery.js";
+import {display_galerie} from "./gallery_ui.js";
 
 
 let val=null;
@@ -12,25 +14,39 @@ export function load(node){
 }
 
 export function nextL() {
-
     if(val.nextElementSibling){
         val = val.nextElementSibling;
+        load(val.firstElementChild);
     }else{
-        val = val.parentNode.firstElementChild;
-        console.log(val);
-    }
+        next().then(value => {
+            display_galerie(value);
 
-    load(val.firstElementChild);
+            let a = document.getElementsByClassName("vignette");
+
+            val = a[0];
+            load(val.firstElementChild);
+        });
+    }
 }
 
 export function prevL() {
 
     if(val.previousElementSibling){
         val = val.previousElementSibling;
+        load(val.firstElementChild);
     }else{
-        val = val.parentNode.lastElementChild;
-        console.log(val);
+        previous().then(value => {
+            display_galerie(value);
+
+            let a = document.getElementsByClassName("vignette");
+
+            val = a[a.length-1];
+
+            //val = val.parentNode.lastElementChild;
+            console.log(val);
+
+            load(val.firstElementChild);
+        });
     }
 
-    load(val.firstElementChild);
 }
