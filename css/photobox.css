@@ -127,3 +127,34 @@ nav #next {
     background-color: rgba(0, 0, 0, 0.6);
     color: floralwhite;
 }
+
+#description{
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  color: rgb(7, 117, 31);
+
+}
+
+#format{
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  color: rgb(7, 117, 31);
+}
+
+#lightbox_title{
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  color: rgb(7, 117, 31);
+}

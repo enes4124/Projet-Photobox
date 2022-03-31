@@ -9,15 +9,17 @@ export function display_lightbox(data){
 
     let urll = "https://webetu.iutnc.univ-lorraine.fr/" + data.photo.url.href;
     let titre = data.photo.titre;
+    let descr = data.photo.descr
+    let format = data.photo.format
 
     
 
     document.getElementById("lightbox_full_img").setAttribute("src",urll);
-    document.getElementById("lightbox_title").innerText = titre;
+    document.getElementById("lightbox_title").innerText = "Titre de la photo : "+titre;
 
     // console.log(document.getElementById("lightbox_full_img").getAttribute("src"));
-
-
+    document.getElementById("description").innerText = "Description de la photo : "+descr;
+    document.getElementById("format").innerText = "Format de la photo (type MIME) : "+format;
 
     show()
 
